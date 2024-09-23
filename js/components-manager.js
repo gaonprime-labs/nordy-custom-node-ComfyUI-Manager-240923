@@ -735,7 +735,7 @@ app.loadGraphData = async function () {
 		return await loadGraphData.apply(this, arguments);
 
 	let graphData = arguments[0];
-	let groupNodes = graphData.extra?.groupNodes;
+	let groupNodes = graphData?.extra?.groupNodes;
 	let res = getChangedVersion(groupNodes);
 
 	if(res) {
